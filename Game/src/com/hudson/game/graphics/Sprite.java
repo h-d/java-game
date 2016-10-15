@@ -8,8 +8,23 @@ public class Sprite {
 	private Spritesheet sheet;
 	
 	public static Sprite grass = new Sprite(16, 0, 0, Spritesheet.tiles);
-	public static Sprite voidSprite = new Sprite(16, 0);
+	public static Sprite grass2 = new Sprite(16,1,0, Spritesheet.tiles);
+	public static Sprite rock = new Sprite(16,2,0, Spritesheet.tiles);
+	public static Sprite voidSprite = new Sprite(16, 0x1B87E0);
+
 	
+	public static Sprite player_up = new Sprite(32,0,5,Spritesheet.tiles);
+	public static Sprite player_down = new Sprite(32,2,5,Spritesheet.tiles);
+	public static Sprite player_side = new Sprite(32,1,5,Spritesheet.tiles);
+	
+	public static Sprite player_up_1 = new Sprite(32,0,6,Spritesheet.tiles);
+	public static Sprite player_up_2 = new Sprite(32,0,7,Spritesheet.tiles);
+	
+	public static Sprite player_down_1 = new Sprite(32,2,6,Spritesheet.tiles);
+	public static Sprite player_down_2 = new Sprite(32,2,7,Spritesheet.tiles);
+	
+	public static Sprite player_side_1 = new Sprite(32,1,6,Spritesheet.tiles);
+	public static Sprite player_side_2 = new Sprite(32,1,7,Spritesheet.tiles);	
 	public Sprite(int size, int x, int y, Spritesheet sheet) {
 		SIZE = size;
 		pixels = new int[SIZE * SIZE];
